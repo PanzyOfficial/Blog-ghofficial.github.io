@@ -1,67 +1,173 @@
-img {
-    max-width: 100%;
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .image {
+    order: 1;
+    width: 900px;
+    height: 50%;
+    position: relative;
+    right:200px;
+}
+
+.about .content {
+    order: 2;
+    position: relative;
+    top:-90px;
+}
+/* Styling for the byline */
+.byline {
+    color: grey;
+    font-size: 1.5rem ;
+}
+
+/* Styling for the date stamp */
+.date {
+    color: grey;
+    font-size: 1.5rem ;
+}
+
+
+.about .images img {
+    width: 100%;
+    -webkit-box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+  }
+  /* Styling for Trending News Section */
+.trending-news {
+    float: right; /* Align the section to the right side */
+    width: 30%; /* Adjust the width as needed */
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trending-news .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styling for each individual news item */
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item .image img {
+    width: 100%;
     height: auto;
 }
-body {
-    font-size: 16px; /* Set a base font size */
+
+.news-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+.news-item p {
+    font-size: 14px;
+    color: #555;
 }
 
-h1 {
-    font-size: 2.5rem; /* Adjust based on your design */
+/* Add spacing between news items */
+.news-item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
 }
 
-h2 {
-    font-size: 2rem; /* Adjust based on your design */
-}
 
-h3 {
-    font-size: 1.7rem; /* Adjust based on your design */
-}
-
-p, ul {
-    font-size: 1.5rem; /* Adjust based on your design */
-}
-header {
-    position: relative;
-    width: 100%;
-}
-
-.search-form {
-    position: absolute;
-    top: 10%; /* Adjust based on your design */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
+/* Styling for the sections container */
 .sections-container {
-    width: 90%; /* Adjust based on your design */
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%; /* Adjust the maximum width as needed */
     margin: 0 auto;
+    padding: 20px;
 }
 
-.about, .trending-news, .reviews, .clients, .footer {
-    padding: 2% 0; /* Adjust based on your design */
-}
-.navbar {
-    display: none;
-    /* Your existing styles for the navbar */
+/* Styling for the About section */
+.about {
+    flex-basis: 100px; /* Set a width of 600px for the About section */
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar {
-        display: block;
+.about .image img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left:150px;
+}
+
+/* Styling for the Trending News section */
+.trending-news {
+    flex-basis: calc(100% - 900px); /* Calculate the width based on the About section width */
+    padding: 90px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: -90px;
+}
+
+.trending-news .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 30px; /* Border radius */
+    padding: 10px; /* Padding inside the textarea */
+    resize: none; /* Disable textarea resizing */
+}
+/* For tablets */
+@media (max-width: 768px) {
+    .about .image {
+        width: 100%;
+        right: 0;
     }
 
-    .icons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* Adjust spacing based on your design */
+    .about .content {
+        top: 0;
     }
 
-    /* Add styles for the responsive navigation */
+    .sections-container {
+        flex-direction: column;
+    }
+
+    .about, .trending-news {
+        flex-basis: 100%;
+    }
+
+    .trending-news {
+        padding: 20px;
+        left: 0;
+    }
 }
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .about .image {
+        width: 100%;
+        right: 0;
+    }
+
+    .about .content {
+        top: 0;
+    }
+
+    .sections-container {
+        flex-direction: column;
+    }
+
+    .about, .trending-news {
+        flex-basis: 100%;
+    }
+
+    .trending-news {
+        padding: 20px;
+        left: 0;
+    }
+}
+
