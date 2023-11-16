@@ -121,4 +121,53 @@ textarea {
     padding: 10px; /* Padding inside the textarea */
     resize: none; /* Disable textarea resizing */
 }
+/* For tablets */
+@media (max-width: 768px) {
+    .about .image {
+        width: 100%;
+        right: 0;
+    }
+
+    .about .content {
+        top: 0;
+    }
+
+    .sections-container {
+        flex-direction: column;
+    }
+
+    .about, .trending-news {
+        flex-basis: 100%;
+    }
+
+    .trending-news {
+        padding: 20px;
+        left: 0;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .about .image {
+        width: 100%;
+        right: 0;
+    }
+
+    .about .content {
+        top: 0;
+    }
+
+    .sections-container {
+        flex-direction: column;
+    }
+
+    .about, .trending-news {
+        flex-basis: 100%;
+    }
+
+    .trending-news {
+        padding: 20px;
+        left: 0;
+    }
+}
 
