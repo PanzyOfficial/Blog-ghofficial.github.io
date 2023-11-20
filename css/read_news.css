@@ -75,25 +75,26 @@
     padding-bottom: 20px;
 }
 
- /* Style the Swiper container */
-.mySwiper {
-  width: 100%; /* Make the Swiper container take the full width of its parent */
-  height: 400px; /* Set a fixed height for the Swiper container, adjust as needed */
-  margin-bottom: 20px; /* Add some bottom margin to provide space between sections */
-}
+.swiper {
+      width: 2000px !important;
+      height:400px !important;
+    }
 
-/* Style the Swiper slides (images) */
-.mySwiper .swiper-slide {
-  width: 100%; /* Make the slides take the full width of the container */
-  height: 100%; /* Make the slides take the full height of the container */
-  object-fit: cover; /* Ensure the images cover the entire slide without distortion */
-}
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-/* Optional: Style the Swiper pagination */
-.swiper-pagination {
-  position: relative;
-  top: -20px; /* Adjust the position of the pagination if needed */
-}
+    .swiper-slide img {
+      display: block;
+      width: 400px !important;
+      height: 700px !important;
+      object-fit: cover;
+    }
 
 
 
