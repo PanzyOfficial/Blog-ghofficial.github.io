@@ -126,7 +126,7 @@ textarea {
     .about .image {
         width: 100%;
         position:relative !important;
-        right: 100px !important;
+        left: 100px !important;
     }
 
     .about .content {
