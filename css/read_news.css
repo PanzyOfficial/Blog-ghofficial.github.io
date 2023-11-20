@@ -125,7 +125,8 @@ textarea {
 @media (max-width: 768px) {
     .about .image {
         width: 100%;
-        left: 0;
+        position:relative;
+        right: 100px;
     }
 
     .about .content {
