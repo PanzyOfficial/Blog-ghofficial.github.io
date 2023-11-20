@@ -69,38 +69,11 @@ section {
   color: #000000;
 }
 
-.btnss{
-  margin-top: 1rem;
-  display: inline-block;
-  border: 0.2rem solid #5352ed;
-  color: #050505;
-  cursor: pointer;
-  background: #5352ed;
-  font-size: 1.7rem;
-  padding: 1rem 3rem;
-  border-radius: 5rem;
-}
-
-.btnss:hover {
-  /* background: #ffffff; */
-  color: #000000;
-}
-
-
 .heading {
   text-align: left;
   margin-bottom: 2.5rem;
   font-size: 4rem;
   color: #f6b93b;
-}
-
-.select-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.select-container select {
-  width: 45%; /* Adjust as needed */
 }
 
 .header {
@@ -146,7 +119,7 @@ section {
 .header .logo {
   margin-right: auto;
   font-size: 2.5rem;
-  color: #f6b93b;
+  color: #10221b;
   font-weight: bolder;
 }
 
@@ -245,39 +218,6 @@ section {
           align-items: center;
 }
 
-.blurry
-{
-/* display: flex;  */
-transition: 0.5s; 
-}
-.blurry#blur.active{
-   filter: blur(20px); 
-   pointer-events:none;
-   user-select: none;
-}
-
-#popup {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 450px;
-    padding: 50px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-   
-} 
-
-#popup.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
-
 .search-form form input {
   width: 100%;
   font-size: 2rem;
@@ -302,29 +242,6 @@ transition: 0.5s;
 .search-form form input::placeholder {
   color: #aaa;
 }
-
-details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: .5em .5em 0;
-  margin-bottom: 1em;
-}
-
-summary {
-  font-weight: bold;
-  margin: -.5em -.5em 0;
-  padding: .5em;
-}
-
-details[open] {
-  padding: .5em;
-}
-
-details[open] summary {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: .5em;
-}
-
 
 .search-form form label {
   font-size: 3rem;
@@ -411,8 +328,6 @@ details[open] summary {
   border-radius: 50%;
   margin-bottom: 1rem;
 }
-
-
 
 .category .box-container .box h3 {
   font-size: 2rem;
@@ -1004,13 +919,13 @@ details[open] summary {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-position: center !important;
+    background-position: right !important;
   }
   .home .box.second {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-            background-position: center !important;
+    background-position: left !important;
   }
   .home .box .content {
     text-align: center;
@@ -1132,4 +1047,3 @@ details[open] summary {
 
 
 /*# sourceMappingURL=style.css.map */
-
