@@ -91,7 +91,7 @@
 
     .swiper-slide img {
       display: block;
-      width: 800px !important;
+      width: 400px !important;
       height: 700px !important;
       object-fit: cover;
     }
